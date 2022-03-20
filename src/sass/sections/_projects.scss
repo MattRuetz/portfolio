@@ -1,11 +1,12 @@
 #projects {
-  //   background-color: $white-color;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23e4e4e4' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-
   color: $dark-blue-text;
-  margin-top: -10rem;
+  margin-top: -15rem;
   padding-top: 15rem;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23efefef' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  width: 100%;
+  margin-bottom: -20rem;
+  padding-bottom: 15rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -13,7 +14,7 @@
   }
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    // margin-bottom: 15rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
