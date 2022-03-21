@@ -34,7 +34,8 @@
   @include supportIE11() {
     color: $secondary-color !important;
     &:hover {
-      color: $white-color !important;
+      color: $hero-color !important;
+      //
     }
   }
 
@@ -57,7 +58,8 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    -webkit-text-fill-color: $hero-color;
+    //
     text-decoration: none;
 
     @include respond(phone) {
@@ -72,8 +74,8 @@
 
 /* Resume Style */
 .cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
+  color: $hero-color;
+  border: 2px solid $hero-color;
 
   &::after {
     background: $white-color;
