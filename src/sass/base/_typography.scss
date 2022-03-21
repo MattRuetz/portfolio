@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@400;700&display=swap");
 
 h1 {
   font-weight: 700;
@@ -26,7 +26,7 @@ a:hover {
   margin: 0px;
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
 
   @include respond(phone) {

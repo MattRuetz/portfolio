@@ -43,10 +43,10 @@
     flex-direction: column;
     justify-content: center;
     color: $primary-color;
-    font-size: 4rem;
+    font-size: 2.5rem;
     width: 5rem;
     height: 5rem;
-    margin: $default-font-size $default-font-size;
+    margin: 0.5rem;
     transition: all 0.2s ease-in;
 
     &:hover {
@@ -57,7 +57,7 @@
 
 .back-to-top i {
   color: $white-color;
-  margin: 1rem 0 $default-font-size;
+  margin: 0.5rem 0;
   transition: all 0.2s ease-in;
 
   &:hover {
