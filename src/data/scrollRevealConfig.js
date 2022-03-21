@@ -26,21 +26,21 @@ export const targetElements = [
   {
     element: ".hero-subtitle",
     animation: {
-      delay: 500,
+      delay: 800,
       origin: window.innerWidth > 768 ? "right" : "bottom",
     },
   },
   {
     element: ".hero-subsubtitle",
     animation: {
-      delay: 900,
+      delay: 1300,
       origin: window.innerWidth > 768 ? "right" : "bottom",
     },
   },
   {
     element: ".hero-cta",
     animation: {
-      delay: 1200,
+      delay: 1800,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
