@@ -16,3 +16,26 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+
+
+body.dark{
+    --c-background: #{$background-d};
+    --c-primary: #{$primary-d};
+    --c-secondary: #{$secondary-d};
+    --c-link: #{$link-d};
+    --c-contrast: #{$contrast-d};
+    --c-dark-grey: #{$dark-grey-d};
+    --c-light-grey: #{$light-grey-d};
+    --c-dark-text: #{$dark-text-d};
+}
+
+body.light{
+    --c-background: #{$background};
+    --c-primary: #{$primary};
+    --c-secondary: #{$secondary};
+    --c-link: #{$link};
+    --c-contrast: #{$contrast};
+    --c-dark-grey: #{$dark-grey};
+    --c-light-grey: #{$light-grey};
+    --c-dark-text: #{$dark-text};
+}

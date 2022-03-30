@@ -3,26 +3,27 @@ $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
 
-:root {
-  /** LIGHT THEME */
+// DARK THEME
+  $background-d: black;
+  $primary-d: red;
+  $link-d: yellow;
+  $secondary-d: purple;
+  $contrast-d: green;
+  $dark-grey-d: #555;
+  $light-grey-d: #777;
+  $dark-text-d: blue;
 
-  /* Base Colors */
-  // COLORS
+  //LIGHT THEME
   $background: #fff5d1;
-
-  // --------
-
   $primary: #146356;
   $link: #91da74;
   $secondary: #a3da8d;
-
   $contrast: #fffcf0;
-
   $dark-grey: #f3c892;
   $light-grey: #d2d2d2;
-
   $dark-text: #146356;
 
+:root {
   /* Other Colors */
   --c-background: #{$background};
   --c-primary: #{$primary};
@@ -32,39 +33,43 @@ $mid-font-size: 2.5rem;
   --c-dark-grey: #{$dark-grey};
   --c-light-grey: #{$light-grey};
   --c-dark-text: #{$dark-text};
+
+//   .dark {
+//     --c-background: #{$background-d};
+//     --c-primary: #{$primary-d};
+//     --c-secondary: #{$secondary-d};
+//     --c-link: #{$link-d};
+//     --c-contrast: #{$contrast-d};
+//     --c-dark-grey: #{$dark-grey-d};
+//     --c-light-grey: #{$light-grey-d};
+//     --c-dark-text: #{$dark-text-d};
+//   }
 }
 
-/** DARK THEME */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /** LIGHT THEME */
+// Auto-detect device theme... unneccessary
 
-    /* Base Colors */
-    // COLORS
-    $background: black;
+// /** DARK THEME */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     // // DARK THEME
+//     // $background-d: black;
+//     // $primary-d: red;
+//     // $link-d: yellow;
+//     // $secondary-d: purple;
+//     // $contrast-d: green;
+//     // $dark-grey-d: #555;
+//     // $light-grey-d: #777;
+//     // $dark-text-d: blue;
 
-    // --------
-
-    $primary: red;
-    $link: yellow;
-    $secondary: purple;
-
-    $contrast: green;
-
-    $dark-grey: #555;
-    $light-grey: #777;
-
-    $dark-text: blue;
-
-    /* Other Colors */
-    --c-background: #{$background};
-    --c-primary: #{$primary};
-    --c-secondary: #{$secondary};
-    --c-link: #{$link};
-    --c-contrast: #{$contrast};
-    --c-dark-grey: #{$dark-grey};
-    --c-light-grey: #{$light-grey};
-    --c-dark-text: #{$dark-text};
-  }
-}
+//     /* Other Colors */
+//     --c-background: #{$background-d};
+//     --c-primary: #{$primary-d};
+//     --c-secondary: #{$secondary-d};
+//     --c-link: #{$link-d};
+//     --c-contrast: #{$contrast-d};
+//     --c-dark-grey: #{$dark-grey-d};
+//     --c-light-grey: #{$light-grey-d};
+//     --c-dark-text: #{$dark-text-d};
+//   }
+// }

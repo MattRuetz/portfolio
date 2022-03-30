@@ -61,7 +61,7 @@
         }
 
         &--important {
-          background: darken(var(--c-secondary), 1%);
+          background: var(--c-secondary);
           display: inline-block;
           font-style: italic;
           padding: 0 0.3rem;
