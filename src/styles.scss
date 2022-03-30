@@ -27,6 +27,7 @@ body.dark{
     --c-dark-grey: #{$dark-grey-d};
     --c-light-grey: #{$light-grey-d};
     --c-dark-text: #{$dark-text-d};
+      --c-background-alt: #{$background-alt-d};
 }
 
 body.light{
@@ -38,4 +39,5 @@ body.light{
     --c-dark-grey: #{$dark-grey};
     --c-light-grey: #{$light-grey};
     --c-dark-text: #{$dark-text};
+    --c-background-alt: #{$background-alt};
 }

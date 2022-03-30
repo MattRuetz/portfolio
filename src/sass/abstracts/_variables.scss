@@ -4,24 +4,26 @@ $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
 
 // DARK THEME
-  $background-d: black;
-  $primary-d: red;
-  $link-d: yellow;
-  $secondary-d: purple;
-  $contrast-d: green;
-  $dark-grey-d: #555;
-  $light-grey-d: #777;
-  $dark-text-d: blue;
+$background-d: #232931;
+$primary-d: #f73859;
+$link-d: #f73859;
+$secondary-d: #f1d18a;
+$contrast-d: #ededed;
+$dark-grey-d: #232931;
+$light-grey-d: #fe346e;
+$dark-text-d: #f1d18a;
+$background-alt-d: #232931;
 
-  //LIGHT THEME
-  $background: #fff5d1;
-  $primary: #146356;
-  $link: #91da74;
-  $secondary: #a3da8d;
-  $contrast: #fffcf0;
-  $dark-grey: #f3c892;
-  $light-grey: #d2d2d2;
-  $dark-text: #146356;
+//LIGHT THEME
+$background: #fff5d1;
+$primary: #146356;
+$link: #91da74;
+$secondary: #a3da8d;
+$contrast: #fffcf0;
+$dark-grey: #f3c892;
+$light-grey: #d2d2d2;
+$dark-text: #146356;
+$background-alt: #fffcf0;
 
 :root {
   /* Other Colors */
@@ -33,43 +35,5 @@ $mid-font-size: 2.5rem;
   --c-dark-grey: #{$dark-grey};
   --c-light-grey: #{$light-grey};
   --c-dark-text: #{$dark-text};
-
-//   .dark {
-//     --c-background: #{$background-d};
-//     --c-primary: #{$primary-d};
-//     --c-secondary: #{$secondary-d};
-//     --c-link: #{$link-d};
-//     --c-contrast: #{$contrast-d};
-//     --c-dark-grey: #{$dark-grey-d};
-//     --c-light-grey: #{$light-grey-d};
-//     --c-dark-text: #{$dark-text-d};
-//   }
+  --c-background-alt: #{$background-alt};
 }
-
-
-// Auto-detect device theme... unneccessary
-
-// /** DARK THEME */
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     // // DARK THEME
-//     // $background-d: black;
-//     // $primary-d: red;
-//     // $link-d: yellow;
-//     // $secondary-d: purple;
-//     // $contrast-d: green;
-//     // $dark-grey-d: #555;
-//     // $light-grey-d: #777;
-//     // $dark-text-d: blue;
-
-//     /* Other Colors */
-//     --c-background: #{$background-d};
-//     --c-primary: #{$primary-d};
-//     --c-secondary: #{$secondary-d};
-//     --c-link: #{$link-d};
-//     --c-contrast: #{$contrast-d};
-//     --c-dark-grey: #{$dark-grey-d};
-//     --c-light-grey: #{$light-grey-d};
-//     --c-dark-text: #{$dark-text-d};
-//   }
-// }
