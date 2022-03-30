@@ -1,16 +1,3 @@
-// COLORS
-$primary-color: #e45826;
-$link-color: #f0a500;
-$secondary-color: blue;
-
-$hero-color: #1b1a17;
-$white-color: #fffcf0;
-
-$dark-grey: #e6d5b8;
-$light-grey: #d2d2d2;
-
-$dark-blue-text: #e45826; // For Headings
-
 // FONT SIZE
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
@@ -51,22 +38,33 @@ $mid-font-size: 2.5rem;
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Base Colors*/
+    /** LIGHT THEME */
+
+    /* Base Colors */
     // COLORS
-    $primary-color: #e45826;
-    $link-color: #f0a500;
-    $secondary-color: blue;
+    $background: black;
 
-    $hero-color: #1b1a17;
-    $white-color: #fffcf0;
+    // --------
 
-    $dark-grey: #e6d5b8;
-    $light-grey: #d2d2d2;
+    $primary: red;
+    $link: yellow;
+    $secondary: purple;
 
-    $dark-blue-text: #e45826; // For Headings
+    $contrast: green;
+
+    $dark-grey: #555;
+    $light-grey: #777;
+
+    $dark-text: blue;
 
     /* Other Colors */
-    --c-background: #{$c-dark};
-    --c-pageborder: #{$c-darker};
+    --c-background: #{$background};
+    --c-primary: #{$primary};
+    --c-secondary: #{$secondary};
+    --c-link: #{$link};
+    --c-contrast: #{$contrast};
+    --c-dark-grey: #{$dark-grey};
+    --c-light-grey: #{$light-grey};
+    --c-dark-text: #{$dark-text};
   }
 }
