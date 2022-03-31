@@ -10,7 +10,7 @@ export const targetElements = [
   {
     element: ".section-title",
     animation: {
-      delay: 300,
+      delay: 200,
       distance: "0px",
       origin: "bottom",
     },
@@ -18,29 +18,37 @@ export const targetElements = [
   {
     element: ".hero-title",
     animation: {
-      delay: 100,
+      delay: 800,
       distance: "0px",
       origin: window.innerWidth > 768 ? "bottom" : "bottom",
     },
   },
   {
-    element: ".hero-subtitle",
+    element: ".toggle-container",
     animation: {
-      delay: 800,
-      origin: window.innerWidth > 768 ? "right" : "bottom",
+      delay: 150,
+      distance: "0px",
+      origin: "top",
     },
   },
   {
-    element: ".hero-subsubtitle",
+    element: ".hero-subtitle",
     animation: {
       delay: 1300,
       origin: window.innerWidth > 768 ? "right" : "bottom",
     },
   },
   {
-    element: ".hero-cta",
+    element: ".hero-subsubtitle",
     animation: {
       delay: 1800,
+      origin: window.innerWidth > 768 ? "right" : "bottom",
+    },
+  },
+  {
+    element: ".hero-cta",
+    animation: {
+      delay: 2500,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },

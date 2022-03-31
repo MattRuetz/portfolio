@@ -35,19 +35,19 @@ a:hover {
 }
 
 .dark-blue-text {
-  color: $dark-blue-text !important;
+  color: var(--c-dark-text) !important;
 }
 
 .text-color-main {
   @include supportColorForIE11();
 
-  // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: var(--c-secondary);
   }
 
   &:hover {
-    transform: translateX(2px);
+    filter: hue-rotate(-90deg);
+    transition: all 0.6s ease;
   }
 }

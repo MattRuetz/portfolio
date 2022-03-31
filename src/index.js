@@ -4,3 +4,21 @@ import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
+
+// set default lightmode, and mode-change script
+window.onload = function () {
+  const body = document.querySelector("body");
+  const theme_btn = document.getElementById("toggle-dark-mode");
+
+  theme_btn.onclick = function () {
+    body.classList.toggle("dark");
+  };
+};
+
+// Prevent user from horizontal scroll
+// var scrollEventHandler = function()
+// {
+//   window.scroll(0, window.pageYOffset)
+// }
+
+// window.addEventListener("scroll", scrollEventHandler, false);

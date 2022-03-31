@@ -1,17 +1,50 @@
-// COLORS
-$primary-color: #146356;
-$link-color: #91da74;
-$secondary-color: #a3da8d;
-
-$hero-color: #fff5d1;
-$white-color: #fffcf0;
-
-$dark-grey: #f3c892;
-$light-grey: #d2d2d2;
-
-$dark-blue-text: #146356; // For Headings
-
 // FONT SIZE
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
+
+// // DARK THEME --alternate... looks pretty cool
+// $background-d: #232931;
+// $primary-d: #f73859;
+// $link-d: #f73859;
+// $secondary-d: #f1d18a;
+// $contrast-d: #ededed;
+// $dark-grey-d: #232931;
+// $light-grey-d: #fe346e;
+// $dark-text-d: #f1d18a;
+// $background-alt-d: #232931;
+
+//DARK THEME
+$background-d: #071e3d;
+$primary-d: #1f4287;
+$secondary-d: #21e6c1;
+$link-d: #21e6c1;
+$contrast-d: #071e3d;
+$dark-grey-d: #232931;
+$light-grey-d: #071e3d;
+$dark-text-d: #278ea5;
+$background-alt-d: #071e3d;
+
+//LIGHT THEME
+$background: #fff5d1;
+$primary: #146356;
+$link: #91da74;
+$secondary: #a3da8d;
+$contrast: #fffcf0;
+$dark-grey: #f3c892;
+$light-grey: #d2d2d2;
+$dark-text: #146356;
+$background-alt: #fffcf0;
+
+:root {
+  /* Other Colors */
+  --c-background: #{$background};
+  --c-primary: #{$primary};
+  --c-secondary: #{$secondary};
+  --c-link: #{$link};
+  --c-contrast: #{$contrast};
+  --c-dark-grey: #{$dark-grey};
+  --c-light-grey: #{$light-grey};
+  --c-dark-text: #{$dark-text};
+  --c-background-alt: #{$background-alt};
+}
