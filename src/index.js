@@ -14,3 +14,11 @@ window.onload = function () {
     body.classList.toggle("dark");
   };
 };
+
+// Prevent user from horizontal scroll
+// var scrollEventHandler = function()
+// {
+//   window.scroll(0, window.pageYOffset)
+// }
+
+// window.addEventListener("scroll", scrollEventHandler, false);
