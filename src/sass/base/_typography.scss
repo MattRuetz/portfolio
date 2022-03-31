@@ -47,7 +47,7 @@ a:hover {
   }
 
   &:hover {
-    filter: hue-rotate(-90deg);
-    transition: all 0.6s ease;
+    filter: hue-rotate(360deg);
+    transition: all 5s ease;
   }
 }

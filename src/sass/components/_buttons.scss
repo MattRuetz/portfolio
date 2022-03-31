@@ -35,7 +35,6 @@
     color: var(--c-secondary) !important;
     &:hover {
       color: var(--c-background) !important;
-      //
     }
   }
 
@@ -54,16 +53,17 @@
 
     @include respond(phone) {
       background-image: none;
+      background-color: var(--c-secondary);
     }
   }
 
   &:hover {
     -webkit-text-fill-color: var(--c-background);
-    //
     text-decoration: none;
 
     @include respond(phone) {
-      -webkit-text-fill-color: var(--c-secondary);
+      -webkit-text-fill-color: var(--c-background);
+      //   color: var(--c-background)
     }
 
     &::after {

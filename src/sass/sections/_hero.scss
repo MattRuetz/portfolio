@@ -17,11 +17,20 @@
   .clickme {
     opacity: 0;
     position: relative;
-    top: 200px;
+    top: 310px;
+    right: 100px;
+    transform: rotateZ(45deg);
     font-size: large;
-    color: rgb(184, 48, 172);
+    color: dodgerblue;
     font-weight: bold;
     animation: blinky 2.6s ease-in-out 3.5s 1;
+
+    @include respond(phone-xs) {
+      transform: scale(0.8);
+
+      right: 0;
+      top: 90%;
+    }
   }
 
   @keyframes blinky {
@@ -42,8 +51,12 @@
       opacity: 0.9;
     }
   }
+  //   @include respond(tab-land) {
+  //     right: 40px;
+  //     top: -20%;
+  //   }
   @include respond(tab-port) {
-    right: -25%;
+    right: 40px;
     top: -20%;
   }
   @include respond(phone) {
@@ -149,16 +162,16 @@
     z-index: -1;
 
     @include respond(tab-land) {
-      transform: scale(1.5) translate(-25%, -25%);
+      transform: scale(2) translate(-25%, -35%);
     }
     @include respond(tab-port) {
-      transform: scale(2) translate(-25%, -25%);
+      transform: scale(3) translate(-25%, -25%);
     }
     @include respond(phone) {
-      transform: scale(4) translate(-25%, -25%);
+      transform: scale(4);
     }
     @include respond(phone-xs) {
-      transform: scale(6) translate(-25%, -25%);
+      transform: scale(6);
     }
   }
 
