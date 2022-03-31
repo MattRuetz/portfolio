@@ -1,12 +1,9 @@
 html {
   font-size: 62.5%;
-  max-width: 100%;
-  overflow-x: hidden;
+    overflow-x: hidden;
 
   &.sr .load-hidden {
     visibility: hidden;
-    max-width: 100%;
-    overflow-x: hidden;
   }
 }
 
@@ -14,6 +11,4 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: black;
-  max-width: 100%;
-  overflow-x: hidden;
 }
