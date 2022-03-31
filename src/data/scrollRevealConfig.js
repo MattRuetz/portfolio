@@ -23,14 +23,14 @@ export const targetElements = [
       origin: window.innerWidth > 768 ? "bottom" : "bottom",
     },
   },
-  {
-    element: ".toggle-container",
-    animation: {
-      delay: 150,
-      distance: "0px",
-      origin: "top",
-    },
-  },
+  //   {
+  //     element: ".toggle-container",
+  //     animation: {
+  //       delay: 1000,
+  //       distance: "0px",
+  //       origin: "top",
+  //     },
+  //   },
   {
     element: ".hero-subtitle",
     animation: {
@@ -50,6 +50,14 @@ export const targetElements = [
     animation: {
       delay: 2500,
       origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".toggle-container",
+    animation: {
+      delay: 2000,
+      distance: "0px",
+      origin: "top",
     },
   },
   {
