@@ -10,16 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattruetz/portfolio"
+    "url": "git+https://github.com/cobidev/simplefolio"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattruetz/portfolio/issues"
+    "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/mattruetz/portfolio#readme",
+  "homepage": "https://github.com/cobidev/simplefolio#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
     "parcel": "^2.0.1",
     "prettier": "^2.4.1"
   },
