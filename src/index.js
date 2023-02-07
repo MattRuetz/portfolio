@@ -1,9 +1,11 @@
 import initScrollReveal from "./scripts/scrollReveal";
 import initTiltEffect from "./scripts/tiltAnimation";
+import initGSAP from "./scripts/gsapAnimation";
 import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
+initGSAP();
 
 // set default lightmode, and mode-change script
 window.onload = function () {

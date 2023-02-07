@@ -25,23 +25,18 @@
   <body>
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
-            <video
-            class="video-background"
-            loop
-            muted
-            autoplay
-        >
-            <source src="./assets//stars.mp4"></source>
-        </video>
+      <video class="video-background" loop muted autoplay>
+        <source src="./assets//stars.mp4" />
+      </video>
 
-        <div class="toggle-container">
-            <div id="toggle-dark-mode">
-                <div class="clickme">Click Me</div>
-            </div>
+      <div class="toggle-container">
+        <div id="toggle-dark-mode">
+          <div class="clickme">Click Me</div>
         </div>
+      </div>
 
       <div class="container">
-          <br><br>
+        <br /><br />
         <h1 class="hero-title load-hidden">
           My name is <span class="text-color-main">Matt Ruetz</span>
         </h1>
@@ -77,16 +72,20 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                After finishing my Computer Engineering degree, I felt like I had missed something.
+                After finishing my Computer Engineering degree, I felt like I
+                had missed something.
               </p>
               <br />
               <p class="about-wrapper__info-text">
-                I could explain everything from first-principles, to how binary bits become instructions and data, but I didn't actually know how to make impressive projects from scratch, which is what initially sparked my love of coding.
+                I could explain everything from first-principles, to how binary
+                bits become instructions and data, but I didn't actually know
+                how to make impressive projects from scratch, which is what
+                initially sparked my love of coding.
               </p>
               <br />
               <p class="about-wrapper__info-text">
-                So I decided to take some time to learn about the technologies that power
-                applications and the web.
+                So I decided to take some time to learn about the technologies
+                that power applications and the web.
               </p>
               <p class="about-wrapper__info-text">
                 I continue to learn more every day by doing what I truly enjoy -
@@ -113,311 +112,613 @@
     <!-- /END About Section -->
 
     <!-- **** Projects Section **** -->
-        <section id="projects">
+    <section id="projects">
       <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- START Project (each row is a proj)-->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">🏡 House Hero</h3>
-                <div>
-                  <p class="mb-4">
-                    A fully-responsive realty listing application with backend user authentication.
-                    Sign up with a google account, or create an account with
-                    an email address and password. Create your own listings, and
-                    browse through properties listed by other users.
-                    <br />
-                    <br />
-                    Made with
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://firebase.google.com/"
-                      >Google Firebase</a
-                    >
-                    for backend authentication and storage, and
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://reactjs.org/"
-                      >React</a
-                    >.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://house-hero-app.vercel.app/"
-                >
-                  Try it out!
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/MattRuetz/house-marketplace-app"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a
-                  rel="noreferrer"
-                  href="https://house-hero-app.vercel.app/"
-                  target="_blank"
-                >
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/HouseHero_thumb.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
+        <h2 class="section-title dark-blue-text">Projects</h2>
+        <div class="project-toggle mb-5">
+          <div class="btn-group">
+            <button
+              type="button"
+              id="hobby-btn"
+              class="btn btn-xl btn-outline-secondary activated"
+            >
+              Hobby
+            </button>
+            <button
+              type="button"
+              id="professional-btn"
+              class="btn btn-xl btn-outline-secondary"
+            >
+              Professional
+            </button>
           </div>
-          <!-- /END Project -->
-
-          <!-- START Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">📝 JSXNote</h3>
-                <div>
-                  <p class="mb-4">
-                    An SPA that includes a Javascript code editor with React/JSX support, and a
-                    Markdown editor. Create and re-order code or text
-                    cells to build and preview React components. Code cells
-                    are concatenated on the backend so data can be accessed
-                    across cells, and re-built rapidly with  
-                    <a href="https://www.npmjs.com/package/esbuild">esbuild</a>.
-                    <br />
-                    <br />
-                    Made with
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://reactjs.org/"
-                      >React</a
-                    >
-                    and
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://www.typescriptlang.org/"
-                      >Typescript</a
-                    >. Inspired by Jupyter Notebooks for Python.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://jsxn-ote-client.vercel.app/"
-                >
-                  Try it out!
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/MattRuetz/JSXNote"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a
-                  rel="noreferrer"
-                  href="https://jsxn-ote-client.vercel.app/"
-                  target="_blank"
-                >
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/JSXNote_thumb.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- START Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">⟁ Delta Book</h3>
-                <div>
-                  <p class="mb-4">
-                    A high-contrast, stylized project tracker. Users can create an account
-                    via email and password, and create porjects for others to view.
-                    Browse through projects sorted by category on the Dashboard, or
-                    create your own project to collaborate with a team of users.
-                    <br>
-                    <br>
-                    Made with <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://reactjs.org/"
-                      >React</a
-                    > and <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://firebase.google.com/"
-                      >Firebase</a
-                    >.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://delta-book.web.app/"
-                >
-                  Try it out!
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/MattRuetz/JSXNote"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a
-                  rel="noreferrer"
-                  href="https://delta-book.web.app/"
-                  target="_blank"
-                >
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/DeltaBook_thumb.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-
-          <!-- START Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">🏄 GitHub Surfer</h3>
-                <div>
-                  <p class="mb-4">
-                    A minimal GitHub read-only web client. Users can search
-                    for other users by name, and select an individual user to view their repositories, Github stats, and
-                    more.
-                    <br />
-                    <br />
-                    Made with
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://reactjs.org/"
-                      >React</a
-                    >, and
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://tailwindcss.com/"
-                      >Tailwind</a
-                    >
-                    with <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://www.npmjs.com/package/daisyui"
-                      >daisyUI</a
-                    > for styling. 
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github-explorer-app-two.vercel.app/"
-                >
-                  Try it out!
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/MattRuetz/github-surfer"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a
-                  rel="noreferrer"
-                  href="https://github-explorer-app-two.vercel.app/"
-                  target="_blank"
-                >
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/GitSurf_thumb.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
         </div>
+        <div class="project-slider-wrapper">
+          <div id="hobby-projects" class="project-wrapper">
+            <!-- START Project (each row is a proj)-->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">🏡 House Hero</h3>
+                  <div>
+                    <p class="mb-4">
+                      A fully-responsive realty listing application with backend
+                      user authentication. Sign up with a google account, or
+                      create an account with an email address and password.
+                      Create your own listings, and browse through properties
+                      listed by other users.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://firebase.google.com/"
+                        >Google Firebase</a
+                      >
+                      for backend authentication and storage, and
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://reactjs.org/"
+                        >React</a
+                      >.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://house-hero-app.vercel.app/"
+                  >
+                    Try it out!
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="https://github.com/MattRuetz/house-marketplace-app"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://house-hero-app.vercel.app/"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/HouseHero_thumb.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- START Project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">📝 JSXNote</h3>
+                  <div>
+                    <p class="mb-4">
+                      An SPA that includes a Javascript code editor with
+                      React/JSX support, and a Markdown editor. Create and
+                      re-order code or text cells to build and preview React
+                      components. Code cells are concatenated on the backend so
+                      data can be accessed across cells, and re-built rapidly
+                      with
+                      <a href="https://www.npmjs.com/package/esbuild">esbuild</a
+                      >.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://reactjs.org/"
+                        >React</a
+                      >
+                      and
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.typescriptlang.org/"
+                        >Typescript</a
+                      >. Inspired by Jupyter Notebooks for Python.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://jsxn-ote-client.vercel.app/"
+                  >
+                    Try it out!
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="https://github.com/MattRuetz/JSXNote"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://jsxn-ote-client.vercel.app/"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/JSXNote_thumb.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- START Project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">⟁ Delta Book</h3>
+                  <div>
+                    <p class="mb-4">
+                      A high-contrast, stylized project tracker. Users can
+                      create an account via email and password, and create
+                      porjects for others to view. Browse through projects
+                      sorted by category on the Dashboard, or create your own
+                      project to collaborate with a team of users.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://reactjs.org/"
+                        >React</a
+                      >
+                      and
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://firebase.google.com/"
+                        >Firebase</a
+                      >.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://delta-book.web.app/"
+                  >
+                    Try it out!
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="https://github.com/MattRuetz/JSXNote"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://delta-book.web.app/"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/DeltaBook_thumb.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- START Project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">🏄 GitHub Surfer</h3>
+                  <div>
+                    <p class="mb-4">
+                      A minimal GitHub read-only web client. Users can search
+                      for other users by name, and select an individual user to
+                      view their repositories, Github stats, and more.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://reactjs.org/"
+                        >React</a
+                      >, and
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://tailwindcss.com/"
+                        >Tailwind</a
+                      >
+                      with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.npmjs.com/package/daisyui"
+                        >daisyUI</a
+                      >
+                      for styling.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://github-explorer-app-two.vercel.app/"
+                  >
+                    Try it out!
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="https://github.com/MattRuetz/github-surfer"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://github-explorer-app-two.vercel.app/"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/GitSurf_thumb.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+          </div>
+
+          <!-- PROFESSIONAL PROJECtS -->
+          <div id="professional-projects" class="project-wrapper">
+            <!-- START Project (each row is a proj)-->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">
+                    <img
+                      class="pro-company-logo"
+                      src="assets/YG_Logo.webp"
+                      alt="Young Guns Logo"
+                    />
+                    Young Guns Travel, Work & Play!
+                  </h3>
+                  <div>
+                    <p class="mb-4">
+                      A responsive website built for
+                      <a
+                        href="https://www.ygcc.com.au/"
+                        rel="noreferrer"
+                        target="_blank"
+                        >Young Guns Container Crew</a
+                      >
+                      to showcase their Travel, Work & Play program. Design
+                      involved finding style which enticed users without
+                      straying away from company branding.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://wordpress.com/"
+                        >WordPress</a
+                      >, including custom styles and animations with
+                      HTML/CSS/JS.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://ygtravelworkplay.com"
+                  >
+                    Check it out!
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://www.ygtravelworkplay.com/"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Video"
+                        class="img-fluid"
+                        src="assets/YG-screenshot-min.webp"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- START Project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">
+                    <img
+                      class="pro-company-logo"
+                      src="assets/Odee_Logo.webp"
+                      alt="ODee Display Logo"
+                    />
+                    O'Dee Display Graphics
+                  </h3>
+                  <div>
+                    <p class="mb-4">
+                      A website built for
+                      <a href="https://odeedisplay.com"
+                        >O'Dee Display Graphics</a
+                      >, a print business specializing in retail displays based
+                      out Markham, Ontario.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://wordpress.com"
+                        >WordPress</a
+                      >
+                      and incorporating many third-praty plugins and custom
+                      code.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://odeedisplay.com/"
+                  >
+                    Check it out!
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://odeedisplay.com"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Video"
+                        class="img-fluid"
+                        src="assets/Odee-screenshot-min.webp"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- START Project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">
+                    <img
+                      class="pro-company-logo"
+                      src="assets/Bushey-Logo.webp"
+                      alt="Bushey Contracting Logo"
+                    />
+                    Bushey Contracting Services Inc.
+                  </h3>
+                  <div>
+                    <p class="mb-4">
+                      This is a highly customized site built for Bushey
+                      Contracting Services Inc., an award winning local
+                      contracting company. It includes a custom price calculator
+                      and detailed animations.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://wordpress.com"
+                        >WordPress</a
+                      >
+                      including custom application features built with
+                      HTML/CSS/JS.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://busheycontractingservicesinc.ca/"
+                  >
+                    Check it out!
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://busheycontractingservicesinc.ca/"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Video"
+                        class="img-fluid"
+                        src="assets/Bushey-screenshot-min.webp"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- START Project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">
+                    <img
+                      class="pro-company-logo"
+                      src="assets/Sids_Logo.webp"
+                      alt=""
+                    />
+                    Sid's Ponds & Gardenscapes
+                  </h3>
+                  <div>
+                    <p class="mb-4">
+                      This is a complete, responsive e-commerce website built
+                      for Sid's Ponds, based out of Mississauga, Ontario. The
+                      e-commerce store is designed specially to match the
+                      company branding, with a layout that is easy to navigate.
+                      <br />
+                      <br />
+                      Made with
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://wordpress.com"
+                        >WordPress</a
+                      >
+                      with custom code for styling.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://sids-ponds.com"
+                  >
+                    Check it out!
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a
+                    rel="noreferrer"
+                    href="https://sids-ponds.com"
+                    target="_blank"
+                  >
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Video"
+                        class="img-fluid"
+                        src="assets/Sids-screenshot-min.webp"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+          </div>
         </div>
       </div>
-    </section>  
-    
+    </section>
+
     <!-- /END Projects Section -->
 
     <!-- **** Contact Section **** -->

@@ -61,6 +61,14 @@ export const targetElements = [
     },
   },
   {
+    element: ".project-toggle",
+    animation: {
+      delay: 200,
+      distance: "0px",
+      origin: "bottom",
+    },
+  },
+  {
     element: ".about-wrapper__image",
     animation: {
       delay: 600,

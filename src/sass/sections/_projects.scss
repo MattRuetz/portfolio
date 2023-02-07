@@ -12,10 +12,16 @@
   width: 100%;
   margin-bottom: -20rem;
   padding-bottom: 15rem;
+  overflow: hidden;
+//   position: relative;
 
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
+  }
+
+  .project-slider-wrapper {
+    position: relative;
   }
 
   .project-wrapper {
@@ -83,6 +89,31 @@
           margin-bottom: 3.2rem;
         }
       }
+    }
+  }
+
+  #professional-projects {
+    position: absolute;
+    top: 0;
+
+    .pro-company-logo {
+        background-color: whitesmoke;
+        padding: 3px;
+        width: 3.8rem;
+        border: 1px solid var(--c-dark-text);
+        border-radius: 3px;
+    }
+  }
+
+  .btn-group {
+    .btn-xl {
+        font-size: $default-font-size;
+        color: var(--c-dark-text);
+        
+    }
+    .activated {
+        background: var(--c-dark-text);
+        color: var(--c-background);
     }
   }
 }
