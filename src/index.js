@@ -15,6 +15,10 @@ window.onload = function () {
   theme_btn.onclick = function () {
     body.classList.toggle("dark");
   };
+
+  setTimeout(() => {
+    body.classList.toggle("dark");
+  }, "2000");
 };
 
 // Prevent user from horizontal scroll
