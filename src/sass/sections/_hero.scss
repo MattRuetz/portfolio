@@ -57,25 +57,27 @@
         .clickme {
             visibility: hidden;
             position: relative;
-            font-size: large;
-            color: rgb(255, 255, 255);
-            background-color: #ffdf28;
-            padding: 10px;
+            font-size: x-large;
+            color:black;
+            background-color: rgb(21, 177, 204);
+            border-radius: 10px;
+            left: 50%;
+            transform: translateX(-50%);
             width: fit-content;
-            filter: invert(100);
+            padding: 10px;
             top: 60%;
             font-weight: bold;
-            animation: blinky 2s ease-in-out 3.5s 1;
+            animation: blinky 4s ease-in-out 3s 1;
 
             @include respond(tab-port) {
-                transform: scale(0.8);
-                right: 0;
+                // right: 0;
+                font-size: large;
                 top: 75%;
             }
 
             @include respond(phone-xs) {
-                transform: scale(0.5);
-                right: 0;
+                // right: 0;
+                font-size: medium;
                 top: 85%;
             }
         }

@@ -4,20 +4,37 @@ export default function initGSAP() {
   let showHobbyBtn = document.getElementById("hobby-btn");
   let showProfessionalBtn = document.getElementById("professional-btn");
 
-  gsap.set("#design-info", {
-    opacity: 0,
+  gsap.set("#hobby-projects", {
+    x: 0,
+    rotateY: 0,
   });
 
-  gsap.to("#design-info", {
-    opacity: 0,
-    ease: "ease",
-    duration: 0.3,
+  gsap.set("#professional-projects", {
+    x: "100vw",
+    rotateY: -120,
   });
 
   showHobbyBtn.addEventListener("click", () => {
     if (!showHobbyBtn.classList.contains("activated")) {
       showHobbyBtn.classList.add("activated");
       showProfessionalBtn.classList.remove("activated");
+      // Slide out Pro projects
+      gsap.to("#professional-projects", {
+        x: "100vw",
+        ease: "ease",
+        duration: 0.6,
+        rotateY: -120,
+      });
+      // Slide in hobby projects
+      gsap.to("#hobby-projects", {
+        x: 0,
+        ease: "ease",
+        duration: 0.6,
+      });
+      gsap.to("#hobby-projects", {
+        rotateY: 0,
+        duration: 1,
+      });
     }
   });
 
@@ -25,6 +42,22 @@ export default function initGSAP() {
     if (!showProfessionalBtn.classList.contains("activated")) {
       showProfessionalBtn.classList.add("activated");
       showHobbyBtn.classList.remove("activated");
+      // Slide out hobby projects
+      gsap.to("#hobby-projects", {
+        x: "-100vw",
+        ease: "ease",
+        duration: 0.6,
+        rotateY: 120,
+      });
+      // Slide in Pro projects
+      gsap.to("#professional-projects", {
+        x: 0,
+        ease: "ease",
+      });
+      gsap.to("#professional-projects", {
+        rotateY: 0,
+        duration: 1,
+      });
     }
   });
 }
