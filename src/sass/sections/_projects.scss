@@ -85,4 +85,16 @@
       }
     }
   }
+
+  .btn-group {
+    .btn-xl {
+        font-size: $default-font-size;
+        color: var(--c-dark-text);
+        
+    }
+    .activated {
+        background: var(--c-dark-text);
+        color: var(--c-background);
+    }
+  }
 }

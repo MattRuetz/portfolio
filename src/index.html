@@ -25,23 +25,18 @@
   <body>
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
-            <video
-            class="video-background"
-            loop
-            muted
-            autoplay
-        >
-            <source src="./assets//stars.mp4"></source>
-        </video>
+      <video class="video-background" loop muted autoplay>
+        <source src="./assets//stars.mp4" />
+      </video>
 
-        <div class="toggle-container">
-            <div id="toggle-dark-mode">
-                <div class="clickme">Click Me</div>
-            </div>
+      <div class="toggle-container">
+        <div id="toggle-dark-mode">
+          <div class="clickme">Click Me</div>
         </div>
+      </div>
 
       <div class="container">
-          <br><br>
+        <br /><br />
         <h1 class="hero-title load-hidden">
           My name is <span class="text-color-main">Matt Ruetz</span>
         </h1>
@@ -77,16 +72,20 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                After finishing my Computer Engineering degree, I felt like I had missed something.
+                After finishing my Computer Engineering degree, I felt like I
+                had missed something.
               </p>
               <br />
               <p class="about-wrapper__info-text">
-                I could explain everything from first-principles, to how binary bits become instructions and data, but I didn't actually know how to make impressive projects from scratch, which is what initially sparked my love of coding.
+                I could explain everything from first-principles, to how binary
+                bits become instructions and data, but I didn't actually know
+                how to make impressive projects from scratch, which is what
+                initially sparked my love of coding.
               </p>
               <br />
               <p class="about-wrapper__info-text">
-                So I decided to take some time to learn about the technologies that power
-                applications and the web.
+                So I decided to take some time to learn about the technologies
+                that power applications and the web.
               </p>
               <p class="about-wrapper__info-text">
                 I continue to learn more every day by doing what I truly enjoy -
@@ -113,11 +112,28 @@
     <!-- /END About Section -->
 
     <!-- **** Projects Section **** -->
-        <section id="projects">
+    <section id="projects">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
-
+          <div class="project-toggle mb-5">
+            <div class="btn-group">
+              <button
+                type="button"
+                id="hobby-btn"
+                class="btn btn-xl btn-outline-secondary activated"
+              >
+                Hobby
+              </button>
+              <button
+                type="button"
+                id="professional-btn"
+                class="btn btn-xl btn-outline-secondary"
+              >
+                Professional
+              </button>
+            </div>
+          </div>
           <!-- START Project (each row is a proj)-->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -125,10 +141,11 @@
                 <h3 class="project-wrapper__text-title">🏡 House Hero</h3>
                 <div>
                   <p class="mb-4">
-                    A fully-responsive realty listing application with backend user authentication.
-                    Sign up with a google account, or create an account with
-                    an email address and password. Create your own listings, and
-                    browse through properties listed by other users.
+                    A fully-responsive realty listing application with backend
+                    user authentication. Sign up with a google account, or
+                    create an account with an email address and password. Create
+                    your own listings, and browse through properties listed by
+                    other users.
                     <br />
                     <br />
                     Made with
@@ -198,11 +215,11 @@
                 <h3 class="project-wrapper__text-title">📝 JSXNote</h3>
                 <div>
                   <p class="mb-4">
-                    An SPA that includes a Javascript code editor with React/JSX support, and a
-                    Markdown editor. Create and re-order code or text
-                    cells to build and preview React components. Code cells
+                    An SPA that includes a Javascript code editor with React/JSX
+                    support, and a Markdown editor. Create and re-order code or
+                    text cells to build and preview React components. Code cells
                     are concatenated on the backend so data can be accessed
-                    across cells, and re-built rapidly with  
+                    across cells, and re-built rapidly with
                     <a href="https://www.npmjs.com/package/esbuild">esbuild</a>.
                     <br />
                     <br />
@@ -273,18 +290,22 @@
                 <h3 class="project-wrapper__text-title">⟁ Delta Book</h3>
                 <div>
                   <p class="mb-4">
-                    A high-contrast, stylized project tracker. Users can create an account
-                    via email and password, and create porjects for others to view.
-                    Browse through projects sorted by category on the Dashboard, or
-                    create your own project to collaborate with a team of users.
-                    <br>
-                    <br>
-                    Made with <a
+                    A high-contrast, stylized project tracker. Users can create
+                    an account via email and password, and create porjects for
+                    others to view. Browse through projects sorted by category
+                    on the Dashboard, or create your own project to collaborate
+                    with a team of users.
+                    <br />
+                    <br />
+                    Made with
+                    <a
                       rel="noreferrer"
                       target="_blank"
                       href="https://reactjs.org/"
                       >React</a
-                    > and <a
+                    >
+                    and
+                    <a
                       rel="noreferrer"
                       target="_blank"
                       href="https://firebase.google.com/"
@@ -336,7 +357,6 @@
           </div>
           <!-- /END Project -->
 
-
           <!-- START Project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -344,9 +364,9 @@
                 <h3 class="project-wrapper__text-title">🏄 GitHub Surfer</h3>
                 <div>
                   <p class="mb-4">
-                    A minimal GitHub read-only web client. Users can search
-                    for other users by name, and select an individual user to view their repositories, Github stats, and
-                    more.
+                    A minimal GitHub read-only web client. Users can search for
+                    other users by name, and select an individual user to view
+                    their repositories, Github stats, and more.
                     <br />
                     <br />
                     Made with
@@ -362,12 +382,14 @@
                       href="https://tailwindcss.com/"
                       >Tailwind</a
                     >
-                    with <a
+                    with
+                    <a
                       rel="noreferrer"
                       target="_blank"
                       href="https://www.npmjs.com/package/daisyui"
                       >daisyUI</a
-                    > for styling. 
+                    >
+                    for styling.
                   </p>
                 </div>
                 <a
@@ -414,10 +436,9 @@
           </div>
           <!-- /END Project -->
         </div>
-        </div>
       </div>
-    </section>  
-    
+    </section>
+
     <!-- /END Projects Section -->
 
     <!-- **** Contact Section **** -->
