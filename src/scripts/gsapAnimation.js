@@ -1,4 +1,5 @@
 import { Expo, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function initGSAP() {
   let showHobbyBtn = document.getElementById("hobby-btn");

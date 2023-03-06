@@ -1,7 +1,6 @@
 #hero {
-    transition: all 0.5s ease;
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 100svh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     border-bottom: 0px;
@@ -14,7 +13,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -2;
+    // z-index: -2;
 
     /* Video Background */
     .video-background {
@@ -25,7 +24,7 @@
         left: 0;
         width: 100%;
         height: auto;
-        z-index: -1;
+        z-index: -10;
 
         @include respond (tab-land){
                 transform: rotateZ(90deg) scale(calc(16 / 9));
@@ -33,10 +32,11 @@
                 top: 25%;
                 width: 100%;
         }
-
     }
+
     // SUN / MOON
     #toggle-dark-mode {
+    // transition: all 0.5s ease;
         position: absolute;
         cursor: pointer;
         right: 5%;
@@ -52,7 +52,7 @@
         background-position: center;
         animation: sun 8s ease-in-out 2s infinite;
         transition: all 0.6s cubic-bezier(.34, .09, .3, 1.7);
-        z-index: 10;
+        // z-index: 10;
 
         .clickme {
             visibility: hidden;
@@ -150,7 +150,7 @@
 .dark #hero {
     box-shadow: 0 0 15rem 5px rgb(232, 252, 255);
     background: transparent;
-    transition: all 0.3s ease;
+    // transition: all 0.3s ease;
     /* Video Background */
     .video-background {
         visibility: visible;
@@ -158,12 +158,12 @@
 
     // Poster on mobile - save user data
     @include respond (phone) {
-        transition: all 0.3s ease;
+        // transition: all 0.3s ease;
         background: url('./assets/stars.jpg');
         background-size: cover;
     }
     @include respond (phone-xs) {
-        transition: all 0.3s ease;
+        // transition: all 0.3s ease;
         background: url('./assets/stars.jpg');
         background-size: cover;
     }

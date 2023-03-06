@@ -2,7 +2,7 @@
   "name": "simplefolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "Matt Ruetz - Developer Portfolio!",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
@@ -30,6 +30,7 @@
     "gsap": "^3.11.4",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "scrollmagic": "^2.0.8",
     "vanilla-tilt": "^1.7.2"
   }
 }
