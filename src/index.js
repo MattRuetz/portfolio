@@ -3,9 +3,11 @@ import initTiltEffect from "./scripts/tiltAnimation";
 import initGSAP from "./scripts/gsapAnimation";
 import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
+let numProfessional = 6;
+let numHobby = 1;
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
-initGSAP();
+initGSAP(numProfessional, numHobby);
 
 // set default lightmode, and mode-change script
 window.onload = function () {
@@ -20,11 +22,3 @@ window.onload = function () {
     body.classList.toggle("dark");
   }, "2000");
 };
-
-// Prevent user from horizontal scroll
-// var scrollEventHandler = function()
-// {
-//   window.scroll(0, window.pageYOffset)
-// }
-
-// window.addEventListener("scroll", scrollEventHandler, false);

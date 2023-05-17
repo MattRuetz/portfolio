@@ -16,10 +16,15 @@
   z-index: 0;
 //   position: relative;
 
+  @include respond(phone) {
+      margin-top: 0;
+      padding-top: 5rem;
+    }
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
   }
+  
 
   .project-slider-wrapper {
     position: relative;
